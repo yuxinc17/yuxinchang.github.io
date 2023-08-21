@@ -125,6 +125,12 @@
             {{ periodical | strip }}
           </div>
         {%- endif %}
+
+          <div class="periodical">
+            {% if entry.add != "none" %}
+              <em>{{entry.add}}</em>
+            {% endif %}
+          </div>
         
           <!-- Links/Buttons -->
           <div class="links">

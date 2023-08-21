@@ -1,10 +1,35 @@
-@article{Boyd2022probabilistic,
-  title={Probabilistic Querying of Continuous-Time Events Sequences},
+@inproceedings{boyd2023probabilistic,
+  title={Probabilistic Querying of Continuous-Time Event Sequences},
   author={Boyd, Alex and Chang, Yuxin and Mandt, Stephan and Smyth, Padhraic},
-  journal={AISTATS},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  pages={10235--10251},
   year={2023},
   arxiv={2211.08499},
-  poster={https://nips.cc/media/PosterPDFs/NeurIPS%202022/57556.png?t=1668823589.908814},
+  organization={PMLR},
+  abstract={Continuous-time event sequences, i.e., sequences consisting of continuous time stamps and associated event types (“marks”), are an important type of sequential data with many applications, e.g., in clinical medicine or user behavior modeling. Since these data are typically modeled in an autoregressive manner (e.g., using neural Hawkes processes or their classical counterparts), it is natural to ask questions about future scenarios such as “what kind of event will occur next” or “will an event of type 𝐴 occur before one of type 𝐵.” Addressing such queries with direct methods such as naive simulation can be highly inefficient from a computational perspective. This paper introduces a new typology of query types and a framework for addressing them using importance sampling. Example queries include predicting the 𝑛th event type in a sequence and the hitting time distribution of one or more event types. We also leverage these findings further to be applicable for estimating general “𝐴 before 𝐵” type of queries. We prove theoretically that our estimation method is effectively always better than naive simulation and demonstrate empirically based on three real-world datasets that our approach can produce orders of magnitude improvements in sampling efficiency compared to naive methods.},
+  pdf={https://proceedings.mlr.press/v206/boyd23a/boyd23a.pdf},
+  abbr={Conference}
+}
 
+@inproceedings{boyd2023inference,
+  title={Inference for mark-censored temporal point processes},
+  author={Boyd, Alex and Chang, Yuxin and Mandt, Stephan and Smyth, Padhraic},
+  booktitle={Uncertainty in Artificial Intelligence (UAI)},
+  pages={226--236},
+  year={2023},
+  organization={PMLR},
+  abstract={Marked temporal point processes (MTPPs) are a general class of stochastic models for modeling the evolution of events of different types (“marks”) in continuous time. These models have broad applications in areas such as medical data monitoring, financial prediction, user modeling, and communication networks. Of significant practical interest in such problems is the issue of missing or censored data over time. In this paper, we focus on the specific problem of inference for a trained MTPP model when events of certain types are not observed over a period of time during prediction. We introduce the concept of mark-censored sub-processes and use this framework to develop a novel marginalization technique for inference in the presence of censored marks. The approach is model-agnostic and applicable to any MTPP model with a well-defined intensity function. We illustrate the flexibility and utility of the method in the context of both parametric and neural MTPP models, with results across a range of datasets including data from simulated Hawkes processes, self-correcting processes, and multiple real-world event datasets.},
+  pdf={https://proceedings.mlr.press/v216/boyd23a/boyd23a.pdf},
+  abbr={Conference},
+  add={<b> Spotlight Presentation </b>}
+}
+
+@article{do2023fair,
+  title={Fair Survival Time Prediction via Mutual Information Minimization},
+  author={Do, Hyungrok and Chang, Yuxin and Cho, Yoon Sang and Smyth, Padhraic and Zhong, Judy},
+  journal={Machine Learning for Healthcare (MLHC)},
+  year={2023},
+  abstract={Survival analysis is a general framework for predicting the time until a specific event occurs, often in the presence of censoring. Although this framework is widely used in practice, few studies to date have considered fairness for time-to-event outcomes, despite recent significant advances in the algorithmic fairness literature more broadly. In this paper, we propose a framework to achieve demographic parity in survival analysis models by minimizing the mutual information between predicted time-to-event and sensitive attributes. We show that our approach effectively minimizes mutual information to encourage statistical independence of time-to-event predictions and sensitive attributes. Furthermore, we propose four types of disparity assessment metrics based on common survival analysis metrics. Through experiments on multiple benchmark datasets, we demonstrate that by minimizing the dependence between the prediction and the sensitive attributes, our method can systematically improve the fairness of survival predictions and is robust to censoring.},
+  pdf={https://static1.squarespace.com/static/59d5ac1780bd5ef9c396eda6/t/64d1a4a8a1b9d8404a35fc35/1691460776924/ID119_Research+Paper_2023.pdf},
   abbr={Conference}
 }
