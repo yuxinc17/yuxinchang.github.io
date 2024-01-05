@@ -16,7 +16,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-Hi, I'm a second-year Ph.D. student in Computer Science at the University of California, Irvine, advised by [Professor Padhraic Smyth](https://www.ics.uci.edu/~smyth/). Before joining UCI, I received my [MPhil in Machine Learning](https://www.mlmi.eng.cam.ac.uk/) from the Engineering Department of the University of Cambridge; my thesis was supervised by [Professor Carl E. Rasmussen](https://mlg.eng.cam.ac.uk/carl/). I hold a BSc (Hons) in Mathematics and Statistics from the University of Edinburgh.
+Hi, I'm a third-year Ph.D. student in Computer Science at the University of California, Irvine, advised by [Professor Padhraic Smyth](https://www.ics.uci.edu/~smyth/). Before joining UCI, I received my [MPhil in Machine Learning](https://www.mlmi.eng.cam.ac.uk/) from the Engineering Department of the University of Cambridge; my thesis was supervised by [Professor Carl E. Rasmussen](https://mlg.eng.cam.ac.uk/carl/). I hold a BSc (Hons) in Mathematics and Statistics from the University of Edinburgh.
 
 Born from my background in Bayesian statistics and optimization, I'm broadly interested in interleaving deep learning and statistical techniques in a principled and practical way, and applying these theories for reliable and interpretable machine learning. My current research focuses on prediction with marked temporal point processes for continuous-time event sequences and deep learning methods for survival analysis, supported by an [HPI Fellowship](https://hpi.ics.uci.edu/students/), an [NIH Grant](https://www.ics.uci.edu/community/news/view_news?id=2090), and a CS Department Dean's Fellowship.
 

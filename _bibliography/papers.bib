@@ -1,14 +1,11 @@
-@inproceedings{boyd2023probabilistic,
-  title={Probabilistic Querying of Continuous-Time Event Sequences},
-  author={Boyd, Alex and Chang, Yuxin and Mandt, Stephan and Smyth, Padhraic},
-  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
-  pages={10235--10251},
+@article{chang2023probabilistic,
+  title={Probabilistic Modeling for Sequences of Sets in Continuous-Time},
+  author={Chang, Yuxin and Boyd, Alex and Smyth, Padhraic},
   year={2023},
-  arxiv={2211.08499},
-  organization={PMLR},
-  abstract={Continuous-time event sequences, i.e., sequences consisting of continuous time stamps and associated event types (“marks”), are an important type of sequential data with many applications, e.g., in clinical medicine or user behavior modeling. Since these data are typically modeled in an autoregressive manner (e.g., using neural Hawkes processes or their classical counterparts), it is natural to ask questions about future scenarios such as “what kind of event will occur next” or “will an event of type 𝐴 occur before one of type 𝐵.” Addressing such queries with direct methods such as naive simulation can be highly inefficient from a computational perspective. This paper introduces a new typology of query types and a framework for addressing them using importance sampling. Example queries include predicting the 𝑛th event type in a sequence and the hitting time distribution of one or more event types. We also leverage these findings further to be applicable for estimating general “𝐴 before 𝐵” type of queries. We prove theoretically that our estimation method is effectively always better than naive simulation and demonstrate empirically based on three real-world datasets that our approach can produce orders of magnitude improvements in sampling efficiency compared to naive methods.},
-  pdf={https://proceedings.mlr.press/v206/boyd23a/boyd23a.pdf},
-  abbr={Conference}
+  journal={Under Conference Review},
+  arxiv={2312.15045},
+  abstract={Neural marked temporal point processes have been a valuable addition to the existing toolbox of statistical parametric models for continuous-time event data. These models are useful for sequences where each event is associated with a single item (a single type of event or a “mark”) -- but such models are not suited for the practical situation where each event is associated with a set of items. In this work, we develop a general framework for modeling set-valued data in continuous-time, compatible with any intensity-based recurrent neural point process model. In addition, we develop inference methods that can use such models to answer probabilistic queries such as “the probability of item 𝐴 being observed before item 𝐵,” conditioned on sequence history. Computing exact answers for such queries is generally intractable for neural models due to both the continuous-time nature of the problem setting and the combinatorially-large space of potential outcomes for each event. To address this, we develop a class of importance sampling methods for querying with set-based sequences and demonstrate orders-of-magnitude improvements in efficiency over direct sampling via systematic experiments with four real-world datasets. We also illustrate how to use this framework to perform model selection using likelihoods that do not involve one-step-ahead prediction.},
+  abbr={Preprint}
 }
 
 @inproceedings{boyd2023inference,
@@ -24,10 +21,23 @@
   add={<b> Spotlight Presentation </b>}
 }
 
-@article{do2023fair,
+@inproceedings{boyd2023probabilistic,
+  title={Probabilistic Querying of Continuous-Time Event Sequences},
+  author={Boyd, Alex and Chang, Yuxin and Mandt, Stephan and Smyth, Padhraic},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  pages={10235--10251},
+  year={2023},
+  arxiv={2211.08499},
+  organization={PMLR},
+  abstract={Continuous-time event sequences, i.e., sequences consisting of continuous time stamps and associated event types (“marks”), are an important type of sequential data with many applications, e.g., in clinical medicine or user behavior modeling. Since these data are typically modeled in an autoregressive manner (e.g., using neural Hawkes processes or their classical counterparts), it is natural to ask questions about future scenarios such as “what kind of event will occur next” or “will an event of type 𝐴 occur before one of type 𝐵.” Addressing such queries with direct methods such as naive simulation can be highly inefficient from a computational perspective. This paper introduces a new typology of query types and a framework for addressing them using importance sampling. Example queries include predicting the 𝑛th event type in a sequence and the hitting time distribution of one or more event types. We also leverage these findings further to be applicable for estimating general “𝐴 before 𝐵” type of queries. We prove theoretically that our estimation method is effectively always better than naive simulation and demonstrate empirically based on three real-world datasets that our approach can produce orders of magnitude improvements in sampling efficiency compared to naive methods.},
+  pdf={https://proceedings.mlr.press/v206/boyd23a/boyd23a.pdf},
+  abbr={Conference}
+}
+
+@inproceedings{do2023fair,
   title={Fair Survival Time Prediction via Mutual Information Minimization},
   author={Do, Hyungrok and Chang, Yuxin and Cho, Yoon Sang and Smyth, Padhraic and Zhong, Judy},
-  journal={Machine Learning for Healthcare (MLHC)},
+  booktitle={Machine Learning for Healthcare (MLHC)},
   year={2023},
   abstract={Survival analysis is a general framework for predicting the time until a specific event occurs, often in the presence of censoring. Although this framework is widely used in practice, few studies to date have considered fairness for time-to-event outcomes, despite recent significant advances in the algorithmic fairness literature more broadly. In this paper, we propose a framework to achieve demographic parity in survival analysis models by minimizing the mutual information between predicted time-to-event and sensitive attributes. We show that our approach effectively minimizes mutual information to encourage statistical independence of time-to-event predictions and sensitive attributes. Furthermore, we propose four types of disparity assessment metrics based on common survival analysis metrics. Through experiments on multiple benchmark datasets, we demonstrate that by minimizing the dependence between the prediction and the sensitive attributes, our method can systematically improve the fairness of survival predictions and is robust to censoring.},
   pdf={https://static1.squarespace.com/static/59d5ac1780bd5ef9c396eda6/t/64d1a4a8a1b9d8404a35fc35/1691460776924/ID119_Research+Paper_2023.pdf},
