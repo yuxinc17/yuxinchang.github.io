@@ -20,4 +20,4 @@ Hi, I am a fourth-year Ph.D. candidate in Computer Science at the University of 
 
 My research has been focusing on general probabilistic machine learning methods, such as probabilistic modeling of continuous-time event sequences and machine learning for healthcare, supported by an [HPI Fellowship](https://hpi.ics.uci.edu/students/), an [NIH Grant](https://www.ics.uci.edu/community/news/view_news?id=2090), and a CS Department Dean's Fellowship.
 
-In summer 2024, I interned as an AI research scientist at [GE Healthcare](https://www.gehealthcare.com/). I was an off-cycle Strats intern at [Goldman Sachs](https://www.goldmansachs.com/) in London (in 2021), and a research software engineer summer intern at [Tencent](https://www.tencent.com/) (in 2019) in my hometown Shenzhen.
+In summer 2024, I interned as an AI research scientist at [GE HealthCare](https://www.gehealthcare.com/). I was an off-cycle Strats intern at [Goldman Sachs](https://www.goldmansachs.com/) in London (in 2021), and a research software engineer summer intern at [Tencent](https://www.tencent.com/) (in 2019) in my hometown Shenzhen.
